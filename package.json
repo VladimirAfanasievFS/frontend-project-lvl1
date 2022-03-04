@@ -1,0 +1,46 @@
+{
+  "name": "frontend-project-lvl1",
+  "version": "1.0.0",
+  "description": "mini games for fun",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "startPackage": "make start"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-calc": "bin/brain-calc.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-prime": "bin/brain-prime.js",
+    "brain-progression": "bin/brain-progression.js"
+  },
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/H9ko/frontend-project-lvl1.git"
+  },
+  "author": "Vova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/H9ko/frontend-project-lvl1/issues"
+  },
+  "homepage": "https://github.com/H9ko/frontend-project-lvl1#readme",
+  "keywords": [
+    "mini-games",
+    "brain-games",
+    "game calculator",
+    "game isEven",
+    "game gcd",
+    "game-prime",
+    "game-progression"
+  ],
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.1"
+  }
+}
