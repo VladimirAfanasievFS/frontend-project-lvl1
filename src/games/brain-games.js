@@ -1,10 +1,10 @@
 
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 
-const startGame = async () => {
+const startGame = () => {
   console.log('Welcome to the Brain Games!');
-  const nameUser = await promptly.prompt('May I have your name? ');
-  console.log(`Hello, ${nameUser}!`);
+  const nameUser = readlineSync.question('May I have your name? ');
+  console.log(`Hi ${nameUser}!`);
 };
 
 export default startGame;

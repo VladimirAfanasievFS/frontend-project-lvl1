@@ -1,36 +1,24 @@
-import promptly from 'promptly';
+import readlineSync from 'readline-sync';
 
-export default async (game) => {
-  console.log('Welcome to Brain Games!');
-  const roundsCount = 3;
+const numberOfRepitions = 3;
 
-  const name = await promptly.prompt('May I have your name?');
-  const { description, makeRound } = game;
+const startEngine = (gameDescription, generateGameData) => {
+  console.log('Welcome to the Brain Games!');
+  const nameUser = readlineSync.question('May I have your name? ');
+  console.log(`Hi ${nameUser}!`);
+  console.log(gameDescription);
 
-  console.log(`Hello, ${name}!`);
-  console.log(description);
-
-  const iter = async (roundsLeft) => {
-    if (roundsLeft === 0) {
-      console.log(`Congratulations, ${name}!`);
+  for (let index = 0; index < numberOfRepitions; index += 1) {
+    const { question, answer } = generateGameData();
+    console.log(`Question:  ${question}`);
+    const userAnswer = readlineSync.question('Answer: ');
+    if (answer !== userAnswer) {
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}"`);
+      console.log(`Let's try again, ${nameUser}!`);
       return;
     }
-
-    const { correctAnswer, question } = makeRound();
-
-    console.log(`Question: ${question}`);
-    const playerAnswer = await promptly.prompt('Your answer: ');
-
-    if (playerAnswer !== correctAnswer) {
-      console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
-      console.log(`Let's try again, ${name}!`);
-
-      return;
-    }
-
     console.log('Correct!');
-    iter(roundsLeft - 1);
-  };
-
-  iter(roundsCount);
+  }
+  console.log(`Congratulations, ${nameUser}!`);
 };
+export default startEngine;
