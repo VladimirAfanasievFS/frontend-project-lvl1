@@ -1,25 +1,36 @@
 import promptly from 'promptly';
 
-const numberOfRepitions = [0, 1, 2];
+export default async (game) => {
+  console.log('Welcome to Brain Games!');
+  const roundsCount = 3;
 
-const startEngine = async (gameDescription, generateGameData) => {
-  console.log('Welcome to the Brain Games!');
-  const nameUser = await promptly.prompt('May I have your name? ');
-  console.log(`Hi ${nameUser}!`);
-  console.log(gameDescription);
+  const name = await promptly.prompt('May I have your name?');
+  const { description, makeRound } = game;
 
-  numberOfRepitions.forEach(async () => {
-    const { question, answer } = generateGameData();
-    console.log(`Question:  ${question}`);
-    // eslint-disable-next-line no-await-in-loop
-    const userAnswer = await promptly.prompt('Answer: ');
-    if (answer !== userAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}"`);
-      console.log(`Let's try again, ${nameUser}!`);
+  console.log(`Hello, ${name}!`);
+  console.log(description);
+
+  const iter = async (roundsLeft) => {
+    if (roundsLeft === 0) {
+      console.log(`Congratulations, ${name}!`);
       return;
     }
+
+    const { correctAnswer, question } = makeRound();
+
+    console.log(`Question: ${question}`);
+    const playerAnswer = await promptly.prompt('Your answer: ');
+
+    if (playerAnswer !== correctAnswer) {
+      console.log(`"${playerAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
+      console.log(`Let's try again, ${name}!`);
+
+      return;
+    }
+
     console.log('Correct!');
-  });
-  console.log(`Congratulations, ${nameUser}!`);
+    iter(roundsLeft - 1);
+  };
+
+  iter(roundsCount);
 };
-export default startEngine;
