@@ -5,7 +5,7 @@ const numberOfRepitions = 3;
 const startEngine = (gameDescription, generateGameData) => {
   console.log('Welcome to the Brain Games!');
   const nameUser = readlineSync.question('May I have your name? ');
-  console.log(`Hi ${nameUser}!`);
+  console.log(`Hello, ${nameUser}!`);
   console.log(gameDescription);
 
   for (let index = 0; index < numberOfRepitions; index += 1) {
