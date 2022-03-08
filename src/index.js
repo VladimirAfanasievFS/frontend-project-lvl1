@@ -11,7 +11,7 @@ const startEngine = (gameDescription, generateGameData) => {
   for (let index = 0; index < numberOfRepitions; index += 1) {
     const { question, answer } = generateGameData();
     console.log(`Question:  ${question}`);
-    const userAnswer = readlineSync.question('Answer: ');
+    const userAnswer = readlineSync.question('Your answer: ');
     if (answer !== userAnswer) {
       console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}"`);
       console.log(`Let's try again, ${nameUser}!`);
