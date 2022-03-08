@@ -1,5 +1,5 @@
 {
-  "name": "frontend-project-lvl1",
+  "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "mini games for fun",
   "main": "src/index.js",
