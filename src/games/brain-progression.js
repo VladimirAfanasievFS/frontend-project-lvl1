@@ -1,4 +1,3 @@
-
 import startEngine from '../index.js';
 import generateRandomNumber from '../lib/utils.js';
 
