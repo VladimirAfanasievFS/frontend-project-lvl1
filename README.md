@@ -3,7 +3,11 @@
 [![Node CI](https://github.com/H9ko/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/H9ko/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/H9ko/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/90c245f108fc36c71a6f/maintainability" /></a>
 <p>Install & brain-games<p>
-<a href="https://asciinema.org/a/hJUYf0EhXV2nZfwAUMoXr4zyE" target="_blank" width="50" height="50" ><img src="https://asciinema.org/a/hJUYf0EhXV2nZfwAUMoXr4zyE.svg" /></a>
+<a href="https://asciinema.org/a/hJUYf0EhXV2nZfwAUMoXr4zyE" target="_blank" style={{
+    width: 50px;
+    height: 50px;
+    display: block;
+}} ><img src="https://asciinema.org/a/hJUYf0EhXV2nZfwAUMoXr4zyE.svg" /></a>
 <p>brain-calc</p>
 <a href="https://asciinema.org/a/qce9g4cIx5N3VTOK9gtDW8Zwl" target="_blank"><img src="https://asciinema.org/a/qce9g4cIx5N3VTOK9gtDW8Zwl.svg" /></a>
 <p>brain-even</p>
