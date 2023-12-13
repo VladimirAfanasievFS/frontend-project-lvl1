@@ -32,6 +32,6 @@
     "prettier": "^3.1.0"
   },
   "dependencies": {
-    "readline-sync": "github:anseki/readline-sync"
+    "readline-sync": "^1.4.10"
   }
 }
