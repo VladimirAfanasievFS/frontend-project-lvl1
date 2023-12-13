@@ -1,24 +1,34 @@
-import readlineSync from 'readline-sync';
+import { main } from "../bin/brain-games.js";
+import readlineSync, { question } from "readline-sync";
 
-const numberOfRepitions = 3;
-
-const startEngine = (gameDescription, generateGameData) => {
-  console.log('Welcome to the Brain Games!');
-  const nameUser = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${nameUser}!`);
-  console.log(gameDescription);
-
-  for (let index = 0; index < numberOfRepitions; index += 1) {
-    const { question, answer } = generateGameData();
-    console.log(`Question: ${question}`);
-    const userAnswer = readlineSync.question('Your answer: ');
-    if (answer !== userAnswer) {
-      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${answer}"`);
-      console.log(`Let's try again, ${nameUser}!`);
-      return;
-    }
-    console.log('Correct!');
+function start() {
+  return main();
+}
+function typeTask(task) {
+  console.log(task);
+}
+function askQuestion(question) {
+  let answer = readlineSync.question(question + "\nYour answer ");
+  return answer;
+}
+function isAnswerCorrect(answer, correctAnswer, counter, characterName) {
+  if (answer === correctAnswer.toString()) {
+    console.log("Correct!");
+    return (counter += 1);
+  } else {
+    console.log(
+      answer +
+        " is wrong answer ;(. Correct answer was " +
+        correctAnswer +
+        ". Let's try again, " +
+        characterName +
+        "!",
+    );
+    return 4;
   }
-  console.log(`Congratulations, ${nameUser}!`);
-};
-export default startEngine;
+}
+function congrats(name) {
+  console.log("Congratulations, " + name + "!");
+}
+
+export { start, typeTask, askQuestion, isAnswerCorrect, congrats };

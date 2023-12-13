@@ -1,18 +1,27 @@
-# frontend-project-lvl1
+### Hexlet tests and linter status:
 
-[![Node CI](https://github.com/H9ko/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/H9ko/frontend-project-lvl1/actions)
-<a href="https://codeclimate.com/github/H9ko/frontend-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/90c245f108fc36c71a6f/maintainability" /></a>
+[![Actions Status](https://github.com/CroKodila/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/CroKodila/frontend-project-44/actions)
 
+<a href="https://codeclimate.com/github/CroKodila/frontend-project-44/maintainability"><img src="https://api.codeclimate.com/v1/badges/f811778c99d67f464fed/maintainability" /></a>
 
-<p>Install & brain-games<p>
-<a href="https://asciinema.org/a/hJUYf0EhXV2nZfwAUMoXr4zyE" target="_blank"  ><img style="background-color:powderblue;" width="240" height="180" border="10"/></a>
-<p>brain-calc</p>
-<a href="https://asciinema.org/a/qce9g4cIx5N3VTOK9gtDW8Zwl" target="_blank"><img src="https://asciinema.org/a/qce9g4cIx5N3VTOK9gtDW8Zwl.svg" /></a>
-<p>brain-even</p>
-<a href="https://asciinema.org/a/IYu7lJb862ovL7eUotfgizsAL" target="_blank"><img src="https://asciinema.org/a/IYu7lJb862ovL7eUotfgizsAL.svg" /></a>
-<p>brain-gcd</p>
-<a href="https://asciinema.org/a/NidE4Yqrdf5MSjS3S5KblygVI" target="_blank"><img src="https://asciinema.org/a/NidE4Yqrdf5MSjS3S5KblygVI.svg" /></a>
-<p>brain-prime</p>
-<a href="https://asciinema.org/a/4vfAZVAW1vkSMk0uy9GfKMPOv" target="_blank"><img src="https://asciinema.org/a/4vfAZVAW1vkSMk0uy9GfKMPOv.svg" /></a>
-<p>brain-progression</p>
-<a href="https://asciinema.org/a/UCcrgrBPYVEu0Xo3qCfnviSxh" target="_blank"><img src="https://asciinema.org/a/UCcrgrBPYVEu0Xo3qCfnviSxh.svg" /></a>
+<a href= "https://asciinema.org/a/NX4VbgLgW5PXiTaJyQKSrl2vM">Brain-even</a><br>
+<a href = "https://asciinema.org/a/iggmggAXTYGw9JvzBO5pro34o">Brain-calc</a><br>
+<a href = "https://asciinema.org/a/sRbFzUHRQYML2ziGLVrRwmFy3">Brain-gcd</a><br>
+<a href = "https://asciinema.org/a/6JDWq928rc7xaJ5s4ZAvueJxl">Brain-progression</a><br>
+<a href = "https://asciinema.org/a/v8KCPGoWFYSHQBuMhic505b2A">Brain-prime</a><br>
+
+# Welcome to my first JS project!
+
+### Here're 5 different console math games for brain training:
+
+### Prime numbers (type 'brain-prime' into console)
+
+### Finding GCD (type 'brain-gcd' into console)
+
+### Even numbers (type 'brain-even' into console)
+
+### Ariphmetical progression (type 'brain-progression' into console)
+
+### Calculator (type 'brain-calc' into console)
+
+## You have to have node.js installed on your computer!

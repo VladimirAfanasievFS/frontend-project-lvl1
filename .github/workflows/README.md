@@ -1,5 +1,5 @@
-# Автоматические тесты
+# Automatic tests
 
-После завершения всех шагов в проекте, вам станут доступны автоматические тесты. Тесты запускаются на каждый коммит - после завершения всех заданий в интерфейсе Хекслета, сделайте коммит, и тесты заработают автоматически.
+After completing all the steps in the project, automatic tests will become available to you. Tests are run on each commit - once all tasks in the Hexlet interface are completed, make a commit, and the tests will run automatically.
 
-Файл hexlet-check.yml отвечает за запуск этих тестов - не удаляйте этот файл и не переименовывайте репозиторий.
+The hexlet-check.yml file is responsible for running these tests - do not delete this file, edit it, or rename the repository.
