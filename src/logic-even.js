@@ -16,7 +16,7 @@ const result = () => {
     if (verification === 1) {
       console.log(right()); // при правильном ответе продолжаем игру
     } else {
-      return `'yes' ${errorUser()} 'no'\n Ler's try again, ${name}!`; // при не правильном ответе заканчивает игру
+      return `'yes' ${errorUser()} 'no'\nLet's try again, ${name}!`; // при не правильном ответе заканчивает игру
     }
     i += 1;
   }
