@@ -15,7 +15,7 @@
     <video controls>
 <script src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.js" id="asciicast-ed75kBcvdXJjPrJ6f26bz5bQe"></script>
     </video>
-    <p><tt>rules</tt></p>
+    <tt>rules</tt>
  <h1>Game: "Calculator"</h1>  
     <video controls>
     <source src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe"> 
