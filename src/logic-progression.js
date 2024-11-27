@@ -29,7 +29,7 @@ const progression = () => {
         a = '.. ';
         result = `${result} ${a}`;
       } else {
-        result = `${result}${sum}`;
+        result = `${result} ${sum}`;
       }
       i += 1;
     }
