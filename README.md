@@ -12,8 +12,8 @@
 <li>Game: "Is the number prime?"</li>
  </ol>
   <h1>Game: "Checking for parity."</h1>  
-    <video width="100" height="100" controls>
-<script src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.svg" type="video/svg"></script>
+    <video width="320" height="240" controls>
+<src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.svg" type="video/svg">
     </video>
    <p> <tt>The essence of the game is as follows:</tt></p>
    <p>The user is shown a random number. And he needs to answer yes if the number is even, or no if it’s odd.</p>
