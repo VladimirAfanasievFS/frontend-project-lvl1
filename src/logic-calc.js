@@ -23,8 +23,8 @@ const solution = () => {
     } else {
       s = '+';
     }
-    const exRound = `${rNumber} ${s} ${twoNumber}`; // рандомное выражение
-    console.log(`Question: ${exRound}`); // даем число пользователю
+    const exRound = ` ${rNumber} ${s} ${twoNumber}`; // рандомное выражение
+    console.log(`Question:${exRound}`); // даем число пользователю
     const answer = readlineSync.question('Your answer: '); // получаем ответ от пользователя
     if (s === '/') {
       result = rNumber / twoNumber;
