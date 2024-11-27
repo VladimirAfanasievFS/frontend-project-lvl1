@@ -21,17 +21,25 @@
     <video controls>
     <source src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe"> 
     </video>
+    <p> <tt>The essence of the game is as follows:</tt></p>
+    <p>The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.</p>
  <h1> Game: "NOD"</h1>  
     <video controls>
     <source src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe"> 
     </video> 
+    <p> <tt>The essence of the game is as follows:</tt></p>
+    <p>the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common divisor of these numbers.</p>
  <h1>Game: "Arithmetic progression"</h1>  
     <video controls>
     <source src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe"> 
     </video> 
+    <p> <tt>The essence of the game is as follows:</tt></p>
+    <p>We show the player a series of numbers forming an arithmetic progression, replacing any of the numbers with two dots. The player must determine this number.</p>
  <h1>Game: "Is the number prime?"</h1>  
     <video controls>
     <source src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe"> 
     </video>
+    <p> <tt>The essence of the game is as follows:</tt></p>
+    <p>Show the player the number. The player must determine whether the number is prime or not.</p>
 </html>
 </body>
