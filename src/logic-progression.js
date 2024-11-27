@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 import readlineSync from 'readline-sync';
 import {
-  right, randomOne, randomeTwo, errorUser, definiteRandom,
+  right, errorUser, definiteRandom,
 } from './const.js';
 import { name } from './index.js';
 
@@ -38,7 +38,7 @@ const progression = () => {
     if (Number(answer) === Number(c)) {
       console.log(right());
     } else {
-      return `${answer}${errorUser()}${c}`;
+      return `'${answer}'${errorUser()}'${c}'\nLet's try again, ${name}!`;
     }
     l += 1;
   }

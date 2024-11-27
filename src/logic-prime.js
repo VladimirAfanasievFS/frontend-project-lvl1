@@ -33,10 +33,10 @@ const prime = () => {
     if (userData === result) {
       console.log(right());
     } else {
-      return `'${userData}'${errorUser()}'${result}'`;
+      return `'${userData}'${errorUser()}'${result}'\nLet's try again, ${name}!`;
     }
     i++;
   }
-  return `Congratulatios, ${name}!`;
+  return `Congratulations, ${name}!`;
 };
 export { prime };
