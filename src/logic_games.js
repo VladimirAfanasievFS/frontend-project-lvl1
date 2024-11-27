@@ -29,7 +29,7 @@ const reslt = () => {
     if (Number(verification) === 1) {
       console.log('Correct!');
     } else {
-      return `${answer} is wrong answer ;(. Correct answer was ${noD()}. \n Let's try again, ${name}`;
+      return `${answer} is wrong answer ;(. Correct answer was ${noD()}. \nLet's try again, ${name}!`;
     }
     i += 1;
   }

@@ -32,7 +32,7 @@ const solution = () => {
       result = rNumber + twoNumber;
     }
     const verification = Math.round(result) === Number(Math.round(answer)) ? 1 : 0;
-    const wrong = `\'${answer}\' ${errorUser()} \'${Math.round(result)}\'. \nLet's try again, ${name}!`; // сообщение при ошибки в ответе
+    const wrong = `\'${answer}\' ${errorUser()} \'${Math.round(result)}\'.\nLet's try again, ${name}!`; // сообщение при ошибки в ответе
     if (verification === 1) {
       console.log(right()); // при правильном ответе продолжаем игру
     } else {
