@@ -7,7 +7,6 @@
   <h1>Games one</h1>  
   <video controls>
 <script src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.js" id="asciicast-ed75kBcvdXJjPrJ6f26bz5bQe" async="true"></script>
-<source src="https://asciinema.org/a/hPXHrE6vBV2BYzYGcjW6r536z"> 
 </video>
 <h1>Gemes two</h1>  
 <video controls>
