@@ -13,12 +13,10 @@ const solution = () => {
   while (i <= 3) {
     const rNumber = randomOne(); // рандомное число
     const twoNumber = randomOne(); // рандомное число
-    const rNSign = Math.floor(Math.random() * 4); // рандомное число на знак
+    const rNSign = Math.floor(Math.random() * 2); // рандомное число на знак
     if (rNSign === 0) {
-      s = '/';
-    } else if (rNSign === 1) {
       s = '*';
-    } else if (rNSign === 2) {
+    } else if (rNSign === 1) {
       s = '-';
     } else {
       s = '+';
@@ -26,9 +24,7 @@ const solution = () => {
     const exRound = ` ${rNumber} ${s} ${twoNumber}`; // рандомное выражение
     console.log(`Question:${exRound}`); // даем число пользователю
     const answer = readlineSync.question('Your answer: '); // получаем ответ от пользователя
-    if (s === '/') {
-      result = rNumber / twoNumber;
-    } else if (s === '*') {
+    if (s === '*') {
       result = rNumber * twoNumber;
     } else if (s === '-') {
       result = rNumber - twoNumber;
