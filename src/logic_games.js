@@ -12,7 +12,7 @@ const reslt = () => {
   while (i <= 3) {
     const randomOne = Math.round(Math.random() * 100);
     const randomeTwo = Math.round(Math.random() * 100);
-    console.log(`Qestion: ${randomOne} ${randomeTwo}`);
+    console.log(`Question: ${randomOne} ${randomeTwo}`);
     const noD = (a = randomOne, b = randomeTwo) => {
       while (a != 0 && b != 0) {
         if (a > b) {
