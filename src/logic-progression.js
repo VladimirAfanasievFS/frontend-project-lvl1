@@ -33,7 +33,7 @@ const progression = () => {
       }
       i += 1;
     }
-    console.log(`Question: ${result}`);
+    console.log(`Question:${result}`);
     const answer = readlineSync.question('Your answer: ');
     if (Number(answer) === Number(c)) {
       console.log(right());
