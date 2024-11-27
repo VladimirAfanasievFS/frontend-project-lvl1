@@ -13,6 +13,7 @@
  </ol>
   <h1>Game: "Checking for parity."</h1>  
     <video controls>
+    <a href="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe" target="_blank"><img src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.svg" /></a>
 <script src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.js" id="asciicast-ed75kBcvdXJjPrJ6f26bz5bQe" alt="показ игры"></script>
     </video>
    <p> <tt>The essence of the game is as follows:</tt></p>
