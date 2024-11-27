@@ -19,7 +19,7 @@
    <p>The user is shown a random number. And he needs to answer yes if the number is even, or no if it’s odd.</p>
  <h1>Game: "Calculator"</h1>  
     <video controls>
-    <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4"> 
+    <source src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe"> 
     </video>
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.</p>
