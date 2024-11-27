@@ -6,7 +6,7 @@ import { name } from './index.js';
 import { randomOne, right, errorUser } from './const.js';
 
 const solution = () => {
-  console.log('What is the result of the expression?');
+  console.log('What is the result of the expression?'); // знакомство с игрой
   let i = 1;
   let s = 0; // из полученного числа делаем символ
   let result = 0; // из читаемого символа делаем решение
@@ -23,7 +23,7 @@ const solution = () => {
     } else {
       s = '+';
     }
-    const exRound = `${rNumber} ${s} ${twoNumber}`; // рандомное выражение
+    const exRound = ` ${rNumber} ${s} ${twoNumber}`; // рандомное выражение
     console.log(`Question: ${exRound}`); // даем число пользователю
     const answer = readlineSync.question('Your answer: '); // получаем ответ от пользователя
     if (s === '/') {
