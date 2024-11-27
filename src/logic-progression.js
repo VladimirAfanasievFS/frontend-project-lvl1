@@ -38,7 +38,7 @@ const progression = () => {
     if (Number(answer) === Number(c)) {
       console.log(right());
     } else {
-      return `'${answer}'${errorUser()}'${c}'\nLet's try again, ${name}!`;
+      return `'${answer}'${errorUser()}'${c}'.\nLet's try again, ${name}!`;
     }
     l += 1;
   }
