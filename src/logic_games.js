@@ -33,6 +33,6 @@ const reslt = () => {
     }
     i += 1;
   }
-  return `Congratulations, ${name}`;
+  return `Congratulations, ${name}!`;
 };
 export { reslt };
