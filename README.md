@@ -12,10 +12,10 @@
 <li>Game: "Arithmetic progression"</li>
 <li>Game: "Is the number prime?"</li>
  </ol>
- <div id="player"></div>
-<script src="asciinema-player.min.js"></script>
   <h1>Game: "Checking for parity."</h1>  
     <video width="320" height="240" controls>
+    <asciinema-player src="/asciinema/demo.cast"></asciinema-player>
+<script src="/js/asciinema-player.js"></script>
 <src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.svg" type="video/svg">
     </video>
    <p> <tt>The essence of the game is as follows:</tt></p>
