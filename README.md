@@ -13,8 +13,8 @@
 <li>Game: "Is the number prime?"</li>
  </ol>
   <h1>Game: "Checking for parity."</h1>  
-  <asciinema-player src="/asciinema/demo.cast"></asciinema-player>
-<script src="/js/asciinema-player.js"></script>
+  <asciinema-player src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.svg"></asciinema-player>
+<script src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.svg"></script>
     <video width="320" height="240" controls>
     <asciinema-player src="/asciinema/demo.cast"></asciinema-player>
 <script src="/js/asciinema-player.js"></script>
