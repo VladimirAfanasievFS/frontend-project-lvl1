@@ -26,8 +26,8 @@ const progression = () => {
       if (i === r) {
         a = sum;
         c = a;
-        a = '.. ';
-        result = `${result}${a}`;
+        a = '..';
+        result = `${result} ${a}`;
       } else {
         result = `${result} ${sum}`;
       }
