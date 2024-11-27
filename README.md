@@ -15,7 +15,9 @@
     <video controls>
 <script src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.js" id="asciicast-ed75kBcvdXJjPrJ6f26bz5bQe"></script>
     </video>
-    <tt>rules</tt>
+   <ol> <tt>The essence of the game is as follows:</tt>
+   <p>The user is shown a random number. And he needs to answer yes if the number is even, or no if it’s odd.</p>
+   </ol>
  <h1>Game: "Calculator"</h1>  
     <video controls>
     <source src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe"> 
