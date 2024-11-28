@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable no-plusplus */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable import/extensions */
@@ -9,7 +10,6 @@ import {
 import { getName } from './greeting.js';
 
 const prime = () => {
-  let result = '';
   let i = 0;
   let dataNumber = 0;
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
@@ -23,15 +23,11 @@ const prime = () => {
         dataNumber = `${Number(getPrimeNumber[n])}`;
       }
     }
-    if (Number(dataNumber) === Number(getRandomNumberOne)) {
-      result = 'yes';
-    } else {
-      result = 'no';
-    }
-    if (getUserData === result) {
+    const isPrimeNumber = Number(dataNumber) === Number(getRandomNumberOne) ? 'yes' : 'no';
+    if (getUserData === isPrimeNumber) {
       console.log(reportsCorrectAnswer());
     } else {
-      return `${reportsErrorsAnswer(getUserData, result, getName)}`;
+      return `${reportsErrorsAnswer(getUserData, isPrimeNumber, getName)}`;
     }
     i++;
   }

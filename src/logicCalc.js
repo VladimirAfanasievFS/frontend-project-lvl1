@@ -1,3 +1,4 @@
+/* eslint-disable import/no-unresolved */
 /* eslint-disable max-len */
 /* eslint-disable no-useless-escape */
 /* eslint-disable import/prefer-default-export */

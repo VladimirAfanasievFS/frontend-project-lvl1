@@ -3,6 +3,7 @@
 /* eslint-disable eqeqeq */
 /* eslint-disable consistent-return */
 /* eslint-disable import/extensions */
+// eslint-disable-next-line import/no-unresolved
 import readlineSync from 'readline-sync';
 import {
   reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber, getTheAnswer,
