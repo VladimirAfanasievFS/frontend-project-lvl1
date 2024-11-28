@@ -4,7 +4,9 @@
 /* eslint-disable consistent-return */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
-import { reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber } from './const.js';
+import {
+  reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber, getTheAnswer,
+} from './const.js';
 import { name } from './greeting.js';
 
 const reslt = () => {
@@ -34,6 +36,6 @@ const reslt = () => {
     }
     i += 1;
   }
-  return `Congratulations, ${name}!`;
+  return getTheAnswer();
 };
 export { reslt };

@@ -3,7 +3,7 @@
 /* eslint-disable no-unused-vars */
 import readlineSync from 'readline-sync';
 import {
-  reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber,
+  reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber, getTheAnswer,
 } from './const.js';
 import { name } from './greeting.js';
 
@@ -42,6 +42,6 @@ const progression = () => {
     }
     l += 1;
   }
-  return `Congratulations, ${name}!`;
+  return getTheAnswer();
 };
 export { progression };

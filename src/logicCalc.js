@@ -3,7 +3,9 @@
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
 import { name } from './greeting.js';
-import { getRandomNumber, reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
+import {
+  getRandomNumber, reportsCorrectAnswer, reportsErrorsAnswer, getTheAnswer,
+} from './const.js';
 
 const solution = () => {
   console.log('What is the result of the expression?'); // знакомство с игрой
@@ -46,6 +48,6 @@ const solution = () => {
     }
     i += 1;
   }
-  return `Congratulations, ${name}!`;
+  return getTheAnswer();
 };
 export { solution };

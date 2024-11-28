@@ -2,7 +2,9 @@
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
 import { name } from './greeting.js';
-import { getRandomNumber, reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
+import {
+  getRandomNumber, reportsCorrectAnswer, reportsErrorsAnswer, getTheAnswer,
+} from './const.js';
 
 const result = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".'); // знакомим пользователя с правилами игры
@@ -20,6 +22,6 @@ const result = () => {
     }
     i += 1;
   }
-  return `Congratulations, ${name}!`;
+  return getTheAnswer();
 };
 export { result };

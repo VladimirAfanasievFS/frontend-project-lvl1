@@ -4,7 +4,7 @@
 /* eslint-disable no-unused-vars */
 import readlineSync from 'readline-sync';
 import {
-  reportsCorrectAnswer, getRandomNumber, reportsErrorsAnswer, storesPrimeNumber,
+  reportsCorrectAnswer, getRandomNumber, reportsErrorsAnswer, storesPrimeNumber, getTheAnswer,
 } from './const.js';
 import { name } from './greeting.js';
 
@@ -37,6 +37,6 @@ const prime = () => {
     }
     i++;
   }
-  return `Congratulations, ${name}!`;
+  return getTheAnswer();
 };
 export { prime };
