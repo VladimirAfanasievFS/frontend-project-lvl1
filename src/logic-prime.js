@@ -6,7 +6,7 @@ import readlineSync from 'readline-sync';
 import {
   right, randomOne, errorUser, primeNumber,
 } from './const.js';
-import { name } from './index.js';
+import { name } from './greeting.js';
 
 const prime = () => {
   let result = '';

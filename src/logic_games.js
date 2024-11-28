@@ -4,7 +4,7 @@
 /* eslint-disable consistent-return */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
-import { name } from './index.js';
+import { name } from './greeting.js';
 
 const reslt = () => {
   console.log('Find the greatest common divisor of given numbers.');

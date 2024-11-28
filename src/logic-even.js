@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
-import { name } from './index.js';
+import { name } from './greeting.js';
 import { randomOne, right, errorUser } from './const.js';
 
 const result = () => {

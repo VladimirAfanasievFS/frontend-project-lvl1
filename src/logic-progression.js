@@ -5,7 +5,7 @@ import readlineSync from 'readline-sync';
 import {
   right, errorUser, definiteRandom,
 } from './const.js';
-import { name } from './index.js';
+import { name } from './greeting.js';
 
 const progression = () => {
   console.log('What number is missing in the progression?');
