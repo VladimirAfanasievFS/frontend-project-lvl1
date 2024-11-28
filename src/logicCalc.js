@@ -14,7 +14,6 @@ const solution = () => {
     const rNumber = randomOne(); // рандомное число
     const twoNumber = randomOne(); // рандомное число
     const markNSign = Math.floor(Math.random() * 3); // рандомное число на знак
-    console.log(markNSign);
     switch (markNSign) {
       case 1:
         mark = '*';
