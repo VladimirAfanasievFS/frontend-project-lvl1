@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /* eslint-disable no-useless-escape */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable import/extensions */
@@ -40,11 +41,10 @@ const solution = () => {
         result = rNumber + twoNumber;
     }
     const verification = Math.round(result) === Number(Math.round(answer)) ? 1 : 0;
-    const wrong = `${reportsErrorsAnswer(answer, Math.round(result), gatName)}`;// сообщение при ошибки в ответе
     if (verification === 1) {
       console.log(reportsCorrectAnswer()); // при правильном ответе продолжаем игру
     } else {
-      return wrong; // при не правильном ответе заканчивает игру
+      return reportsErrorsAnswer(answer, Math.round(result), gatName); // при не правильном ответе заканчивает игру
     }
     i += 1;
   }
