@@ -42,6 +42,6 @@ const progression = () => {
     }
     l += 1;
   }
-  return getTheAnswer();
+  return getTheAnswer(name);
 };
 export { progression };

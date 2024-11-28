@@ -1,5 +1,4 @@
 /* eslint-disable max-len */
-import { name } from './greeting';
 
 const reportsCorrectAnswer = () => {
   const i = 'Correct!'; // сообщение правильный ответ
@@ -23,7 +22,7 @@ const storesPrimeNumber = () => {
   return result;
 };
 const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min); // рандомное число от и до
-const getTheAnswer = () => `Congratulations, ${name}!`;
+const getTheAnswer = (a) => `Congratulations, ${a}!`;
 export {
   reportsCorrectAnswer, reportsErrorsAnswer, simile, getRandomNumber, storesPrimeNumber, getTheAnswer,
 };

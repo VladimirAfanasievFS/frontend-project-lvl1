@@ -48,6 +48,6 @@ const solution = () => {
     }
     i += 1;
   }
-  return getTheAnswer();
+  return getTheAnswer(name);
 };
 export { solution };

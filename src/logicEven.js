@@ -22,6 +22,6 @@ const result = () => {
     }
     i += 1;
   }
-  return getTheAnswer();
+  return getTheAnswer(name);
 };
 export { result };

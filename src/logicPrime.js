@@ -37,6 +37,6 @@ const prime = () => {
     }
     i++;
   }
-  return getTheAnswer();
+  return getTheAnswer(name);
 };
 export { prime };
