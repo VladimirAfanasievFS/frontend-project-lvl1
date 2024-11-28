@@ -6,7 +6,7 @@ import readlineSync from 'readline-sync';
 import {
   reportsCorrectAnswer, getRandomNumber, reportsErrorsAnswer, storesPrimeNumber, getTheAnswer,
 } from './const.js';
-import { name } from './greeting.js';
+import { gatName } from './greeting.js';
 
 const prime = () => {
   let result = '';
@@ -33,10 +33,10 @@ const prime = () => {
     if (userData === result) {
       console.log(reportsCorrectAnswer());
     } else {
-      return `${reportsErrorsAnswer(userData, result, name)}`;
+      return `${reportsErrorsAnswer(userData, result, gatName)}`;
     }
     i++;
   }
-  return getTheAnswer(name);
+  return getTheAnswer(gatName);
 };
 export { prime };

@@ -7,7 +7,7 @@ import readlineSync from 'readline-sync';
 import {
   reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber, getTheAnswer,
 } from './const.js';
-import { name } from './greeting.js';
+import { gatName } from './greeting.js';
 
 const reslt = () => {
   console.log('Find the greatest common divisor of given numbers.');
@@ -32,10 +32,10 @@ const reslt = () => {
     if (Number(verification) === 1) {
       console.log(`${reportsCorrectAnswer()}`);
     } else {
-      return `${reportsErrorsAnswer(answer, noD(), name)}`;
+      return `${reportsErrorsAnswer(answer, noD(), gatName)}`;
     }
     i += 1;
   }
-  return getTheAnswer(name);
+  return getTheAnswer(gatName);
 };
 export { reslt };

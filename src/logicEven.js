@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
-import { name } from './greeting.js';
+import { gatName } from './greeting.js';
 import {
   getRandomNumber, reportsCorrectAnswer, reportsErrorsAnswer, getTheAnswer,
 } from './const.js';
@@ -18,10 +18,10 @@ const result = () => {
     if (verification === 1) {
       console.log(reportsCorrectAnswer()); // при правильном ответе продолжаем игру
     } else {
-      return `${reportsErrorsAnswer('yes', 'no', name)}`; // при не правильном ответе заканчивает игру
+      return `${reportsErrorsAnswer('yes', 'no', gatName)}`; // при не правильном ответе заканчивает игру
     }
     i += 1;
   }
-  return getTheAnswer(name);
+  return getTheAnswer(gatName);
 };
 export { result };

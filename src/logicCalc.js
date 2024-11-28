@@ -2,7 +2,7 @@
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
-import { name } from './greeting.js';
+import { gatName } from './greeting.js';
 import {
   getRandomNumber, reportsCorrectAnswer, reportsErrorsAnswer, getTheAnswer,
 } from './const.js';
@@ -40,7 +40,7 @@ const solution = () => {
         result = rNumber + twoNumber;
     }
     const verification = Math.round(result) === Number(Math.round(answer)) ? 1 : 0;
-    const wrong = `${reportsErrorsAnswer(answer, Math.round(result), name)}`;// сообщение при ошибки в ответе
+    const wrong = `${reportsErrorsAnswer(answer, Math.round(result), gatName)}`;// сообщение при ошибки в ответе
     if (verification === 1) {
       console.log(reportsCorrectAnswer()); // при правильном ответе продолжаем игру
     } else {
@@ -48,6 +48,6 @@ const solution = () => {
     }
     i += 1;
   }
-  return getTheAnswer(name);
+  return getTheAnswer(gatName);
 };
 export { solution };

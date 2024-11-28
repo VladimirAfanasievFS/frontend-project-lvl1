@@ -5,7 +5,7 @@ import readlineSync from 'readline-sync';
 import {
   reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber, getTheAnswer,
 } from './const.js';
-import { name } from './greeting.js';
+import { gatName } from './greeting.js';
 
 const progression = () => {
   console.log('What number is missing in the progression?');
@@ -38,10 +38,10 @@ const progression = () => {
     if (Number(answer) === Number(c)) {
       console.log(reportsCorrectAnswer());
     } else {
-      return `${reportsErrorsAnswer(answer, c, name)}`;
+      return `${reportsErrorsAnswer(answer, c, gatName)}`;
     }
     l += 1;
   }
-  return getTheAnswer(name);
+  return getTheAnswer(gatName);
 };
 export { progression };
