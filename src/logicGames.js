@@ -7,16 +7,16 @@ import readlineSync from 'readline-sync';
 import {
   reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber, getTheAnswer,
 } from './const.js';
-import { gatName } from './greeting.js';
+import { getName } from './greeting.js';
 
 const reslt = () => {
   console.log('Find the greatest common divisor of given numbers.');
   let i = 1;
   while (i <= 3) {
-    const randomOne = getRandomNumber(1, 100);
-    const randomeTwo = getRandomNumber(1, 100);
-    console.log(`Question: ${randomOne} ${randomeTwo}`);
-    const noD = (a = randomOne, b = randomeTwo) => {
+    const getRandomNumberOne = getRandomNumber(1, 100);
+    const getRandomNumberTwo = getRandomNumber(1, 100);
+    console.log(`Question: ${getRandomNumberOne} ${getRandomNumberTwo}`);
+    const noD = (a = getRandomNumberOne, b = getRandomNumberTwo) => {
       while (a != 0 && b != 0) {
         if (a > b) {
           a %= b;
@@ -26,16 +26,16 @@ const reslt = () => {
       }
       return a + b;
     };
-    const answer = readlineSync.question(' '); // получаем ответ от пользователя
-    const verification = Number(answer) === Number(noD()) ? 1 : 0; // проверям ответ с числом
+    const getAnswer = readlineSync.question(' '); // получаем ответ от пользователя
+    const verification = Number(getAnswer) === Number(noD()) ? 1 : 0; // проверям ответ с числом
 
     if (Number(verification) === 1) {
       console.log(`${reportsCorrectAnswer()}`);
     } else {
-      return `${reportsErrorsAnswer(answer, noD(), gatName)}`;
+      return `${reportsErrorsAnswer(getAnswer, noD(), getName)}`;
     }
     i += 1;
   }
-  return getTheAnswer(gatName);
+  return getTheAnswer(getName);
 };
 export { reslt };

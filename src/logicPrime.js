@@ -6,37 +6,35 @@ import readlineSync from 'readline-sync';
 import {
   reportsCorrectAnswer, getRandomNumber, reportsErrorsAnswer, storesPrimeNumber, getTheAnswer,
 } from './const.js';
-import { gatName } from './greeting.js';
+import { getName } from './greeting.js';
 
 const prime = () => {
   let result = '';
   let i = 0;
-  const p = 0;
-  let data = 0;
+  let dataNumber = 0;
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   while (i < 3) {
-    const a = getRandomNumber(2, 99);// число
-    const numberRandom = `Question: ${a}`;
-    console.log(numberRandom);
-    const userData = readlineSync.question('');// ответ пользователя
-    const b = storesPrimeNumber();// простые числа
-    for (let n = 0; n < b.length; n++) {
-      if (Number(b[n]) === Number(a)) {
-        data = `${Number(b[n])}`;
+    const getRandomNumberOne = getRandomNumber(2, 99);// число
+    console.log(`Question: ${getRandomNumberOne}`);
+    const getUserData = readlineSync.question('');// ответ пользователя
+    const getPrimeNumber = storesPrimeNumber();// простые числа
+    for (let n = 0; n < getPrimeNumber.length; n++) {
+      if (Number(getPrimeNumber[n]) === Number(getRandomNumberOne)) {
+        dataNumber = `${Number(getPrimeNumber[n])}`;
       }
     }
-    if (Number(data) === Number(a)) {
+    if (Number(dataNumber) === Number(getRandomNumberOne)) {
       result = 'yes';
     } else {
       result = 'no';
     }
-    if (userData === result) {
+    if (getUserData === result) {
       console.log(reportsCorrectAnswer());
     } else {
-      return `${reportsErrorsAnswer(userData, result, gatName)}`;
+      return `${reportsErrorsAnswer(getUserData, result, getName)}`;
     }
     i++;
   }
-  return getTheAnswer(gatName);
+  return getTheAnswer(getName);
 };
 export { prime };

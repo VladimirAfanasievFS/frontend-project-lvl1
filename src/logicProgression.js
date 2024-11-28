@@ -5,27 +5,27 @@ import readlineSync from 'readline-sync';
 import {
   reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber, getTheAnswer,
 } from './const.js';
-import { gatName } from './greeting.js';
+import { getName } from './greeting.js';
 
 const progression = () => {
   console.log('What number is missing in the progression?');
   let l = 0;
   while (l < 3) {
-    const fromOneRandom = getRandomNumber(1, 20);// первое число с чего начинает
-    const quantityRandom = getRandomNumber(5, 10);// длина прогрессии
-    const arithmeticRandom = getRandomNumber(1, 4);
+    const getOneNumber = getRandomNumber(1, 20);// первое число с чего начинает
+    const getLengthProgression = getRandomNumber(5, 10);// длина прогрессии
+    const getArithmeticRandom = getRandomNumber(1, 4);
     let i = 0;
-    let c = 0;
+    let missNumber = 0;
     let a = 0; // значение которое спрятано
-    const b = arithmeticRandom;
-    let sum = fromOneRandom;
+    const getIncrease = getArithmeticRandom;
+    let sum = getOneNumber;
     let result = '';
-    const r = getRandomNumber(1, quantityRandom);
-    while (i <= quantityRandom) {
-      sum += b;
-      if (i === r) {
+    const getLength = getRandomNumber(1, getLengthProgression);
+    while (i <= getLengthProgression) {
+      sum += getIncrease;
+      if (i === getLength) {
         a = sum;
-        c = a;
+        missNumber = a;
         a = '..';
         result = `${result} ${a}`;
       } else {
@@ -34,14 +34,14 @@ const progression = () => {
       i += 1;
     }
     console.log(`Question:${result}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (Number(answer) === Number(c)) {
+    const getAnswer = readlineSync.question('Your answer: ');
+    if (Number(getAnswer) === Number(missNumber)) {
       console.log(reportsCorrectAnswer());
     } else {
-      return `${reportsErrorsAnswer(answer, c, gatName)}`;
+      return `${reportsErrorsAnswer(getAnswer, missNumber, getName)}`;
     }
     l += 1;
   }
-  return getTheAnswer(gatName);
+  return getTheAnswer(getName);
 };
 export { progression };
