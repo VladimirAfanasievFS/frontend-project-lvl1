@@ -8,28 +8,35 @@ import { randomOne, right, errorUser } from './const.js';
 const solution = () => {
   console.log('What is the result of the expression?'); // знакомство с игрой
   let i = 1;
-  let s = 0; // из полученного числа делаем символ
+  let mark = 0; // из полученного числа делаем символ
   let result = 0; // из читаемого символа делаем решение
   while (i <= 3) {
     const rNumber = randomOne(); // рандомное число
     const twoNumber = randomOne(); // рандомное число
-    const rNSign = Math.floor(Math.random() * 2); // рандомное число на знак
-    if (rNSign === 0) {
-      s = '*';
-    } else if (rNSign === 1) {
-      s = '-';
-    } else {
-      s = '+';
+    const markNSign = Math.floor(Math.random() * 3); // рандомное число на знак
+    console.log(markNSign);
+    switch (markNSign) {
+      case 1:
+        mark = '*';
+        break;
+      case 2:
+        mark = '-';
+        break;
+      default:
+        mark = '+';
     }
-    const exRound = ` ${rNumber} ${s} ${twoNumber}`; // рандомное выражение
+    const exRound = ` ${rNumber} ${mark} ${twoNumber}`; // рандомное выражение
     console.log(`Question:${exRound}`); // даем число пользователю
     const answer = readlineSync.question('Your answer: '); // получаем ответ от пользователя
-    if (s === '*') {
-      result = rNumber * twoNumber;
-    } else if (s === '-') {
-      result = rNumber - twoNumber;
-    } else {
-      result = rNumber + twoNumber;
+    switch (mark) {
+      case '*':
+        result = rNumber * twoNumber;
+        break;
+      case '-':
+        result = rNumber - twoNumber;
+        break;
+      default:
+        result = rNumber + twoNumber;
     }
     const verification = Math.round(result) === Number(Math.round(answer)) ? 1 : 0;
     const wrong = `\'${answer}\' ${errorUser()} \'${Math.round(result)}\'.\nLet's try again, ${name}!`; // сообщение при ошибки в ответе
@@ -43,3 +50,4 @@ const solution = () => {
   return `Congratulations, ${name}!`;
 };
 export { solution };
+console.log(solution());
