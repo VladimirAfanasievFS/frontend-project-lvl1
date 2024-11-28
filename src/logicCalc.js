@@ -49,4 +49,3 @@ const solution = () => {
   return `Congratulations, ${name}!`;
 };
 export { solution };
-console.log(solution());
