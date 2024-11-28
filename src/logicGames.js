@@ -4,15 +4,15 @@
 /* eslint-disable consistent-return */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
-import { reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
+import { reportsCorrectAnswer, reportsErrorsAnswer, getRandomNumber } from './const.js';
 import { name } from './greeting.js';
 
 const reslt = () => {
   console.log('Find the greatest common divisor of given numbers.');
   let i = 1;
   while (i <= 3) {
-    const randomOne = Math.round(Math.random() * 100);
-    const randomeTwo = Math.round(Math.random() * 100);
+    const randomOne = getRandomNumber(1, 100);
+    const randomeTwo = getRandomNumber(1, 100);
     console.log(`Question: ${randomOne} ${randomeTwo}`);
     const noD = (a = randomOne, b = randomeTwo) => {
       while (a != 0 && b != 0) {

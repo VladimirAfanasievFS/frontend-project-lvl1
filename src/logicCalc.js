@@ -3,7 +3,7 @@
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
 import { name } from './greeting.js';
-import { randomOne, reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
+import { getRandomNumber, reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
 
 const solution = () => {
   console.log('What is the result of the expression?'); // знакомство с игрой
@@ -11,8 +11,8 @@ const solution = () => {
   let mark = 0; // из полученного числа делаем символ
   let result = 0; // из читаемого символа делаем решение
   while (i <= 3) {
-    const rNumber = randomOne(); // рандомное число
-    const twoNumber = randomOne(); // рандомное число
+    const rNumber = getRandomNumber(1, 99); // рандомное число
+    const twoNumber = getRandomNumber(1, 99); // рандомное число
     const markNSign = Math.floor(Math.random() * 3); // рандомное число на знак
     switch (markNSign) {
       case 1:

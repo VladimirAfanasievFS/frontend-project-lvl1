@@ -4,7 +4,7 @@
 /* eslint-disable no-unused-vars */
 import readlineSync from 'readline-sync';
 import {
-  reportsCorrectAnswer, randomOne, reportsErrorsAnswer, primeNumber,
+  reportsCorrectAnswer, getRandomNumber, reportsErrorsAnswer, storesPrimeNumber,
 } from './const.js';
 import { name } from './greeting.js';
 
@@ -15,11 +15,11 @@ const prime = () => {
   let data = 0;
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   while (i < 3) {
-    const a = randomOne();// число
+    const a = getRandomNumber(2, 99);// число
     const numberRandom = `Question: ${a}`;
     console.log(numberRandom);
     const userData = readlineSync.question('');// ответ пользователя
-    const b = primeNumber();// простые числа
+    const b = storesPrimeNumber();// простые числа
     for (let n = 0; n < b.length; n++) {
       if (Number(b[n]) === Number(a)) {
         data = `${Number(b[n])}`;

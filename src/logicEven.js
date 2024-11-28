@@ -2,13 +2,13 @@
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
 import { name } from './greeting.js';
-import { randomOne, reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
+import { getRandomNumber, reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
 
 const result = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".'); // знакомим пользователя с правилами игры
   let i = 1;
   while (i <= 3) {
-    const a = randomOne();
+    const a = getRandomNumber(1, 99);
     console.log(`Question: ${a}`); // даем число пользователю
     const answer = readlineSync.question('Your answer: '); // получаем ответ от пользователя
     const checkNumber = Number(a) % 2 === 0 ? 'yes' : 'no'; // проверяем на четность число
