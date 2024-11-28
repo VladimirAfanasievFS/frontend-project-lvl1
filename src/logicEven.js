@@ -2,7 +2,7 @@
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
 import { name } from './greeting.js';
-import { randomOne, right, errorUser } from './const.js';
+import { randomOne, reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
 
 const result = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".'); // знакомим пользователя с правилами игры
@@ -14,9 +14,9 @@ const result = () => {
     const checkNumber = Number(a) % 2 === 0 ? 'yes' : 'no'; // проверяем на четность число
     const verification = answer === checkNumber ? 1 : 0; // проверям ответ с числом
     if (verification === 1) {
-      console.log(right()); // при правильном ответе продолжаем игру
+      console.log(reportsCorrectAnswer()); // при правильном ответе продолжаем игру
     } else {
-      return `'yes' ${errorUser()} 'no'\nLet's try again, ${name}!`; // при не правильном ответе заканчивает игру
+      return `${reportsErrorsAnswer('yes', 'no', name)}`; // при не правильном ответе заканчивает игру
     }
     i += 1;
   }

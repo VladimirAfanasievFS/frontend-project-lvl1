@@ -3,7 +3,7 @@
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
 import { name } from './greeting.js';
-import { randomOne, right, errorUser } from './const.js';
+import { randomOne, reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
 
 const solution = () => {
   console.log('What is the result of the expression?'); // знакомство с игрой
@@ -38,9 +38,9 @@ const solution = () => {
         result = rNumber + twoNumber;
     }
     const verification = Math.round(result) === Number(Math.round(answer)) ? 1 : 0;
-    const wrong = `\'${answer}\' ${errorUser()} \'${Math.round(result)}\'.\nLet's try again, ${name}!`; // сообщение при ошибки в ответе
+    const wrong = `${reportsErrorsAnswer(answer, Math.round(result), name)}`;// сообщение при ошибки в ответе
     if (verification === 1) {
-      console.log(right()); // при правильном ответе продолжаем игру
+      console.log(reportsCorrectAnswer()); // при правильном ответе продолжаем игру
     } else {
       return wrong; // при не правильном ответе заканчивает игру
     }

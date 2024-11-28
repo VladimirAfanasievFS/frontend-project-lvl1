@@ -4,7 +4,7 @@
 /* eslint-disable no-unused-vars */
 import readlineSync from 'readline-sync';
 import {
-  right, randomOne, errorUser, primeNumber,
+  reportsCorrectAnswer, randomOne, reportsErrorsAnswer, primeNumber,
 } from './const.js';
 import { name } from './greeting.js';
 
@@ -31,9 +31,9 @@ const prime = () => {
       result = 'no';
     }
     if (userData === result) {
-      console.log(right());
+      console.log(reportsCorrectAnswer());
     } else {
-      return `'${userData}'${errorUser()}'${result}'\nLet's try again, ${name}!`;
+      return `${reportsErrorsAnswer(userData, result, name)}`;
     }
     i++;
   }

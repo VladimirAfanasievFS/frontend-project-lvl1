@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-const right = () => {
+const reportsCorrectAnswer = () => {
   const i = 'Correct!'; // сообщение правильный ответ
   return i;
 };
@@ -11,8 +11,8 @@ const randomeTwo = () => {
   const result = Math.round(Math.random() * 100);
   return result;
 };
-const errorUser = () => {
-  const result = ' is wrong answer ;(. Correct answer was ';
+const reportsErrorsAnswer = (a, b, c) => {
+  const result = `'${a}' is wrong answer ;(. Correct answer was '${b}'\nLet's try again, ${c}!`;
   return result;
 }; // сообщение при ошибке
 const simile = (a, b) => {
@@ -30,5 +30,5 @@ const primeNumber = () => {
 };
 const definiteRandom = (min, max) => Math.round(Math.random() * (max - min) + min); // рандомное число от и до
 export {
-  right, randomOne, randomeTwo, errorUser, simile, definiteRandom, primeNumber,
+  reportsCorrectAnswer, randomOne, randomeTwo, reportsErrorsAnswer, simile, definiteRandom, primeNumber,
 };

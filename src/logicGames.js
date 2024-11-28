@@ -4,6 +4,7 @@
 /* eslint-disable consistent-return */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
+import { reportsCorrectAnswer, reportsErrorsAnswer } from './const.js';
 import { name } from './greeting.js';
 
 const reslt = () => {
@@ -27,9 +28,9 @@ const reslt = () => {
     const verification = Number(answer) === Number(noD()) ? 1 : 0; // проверям ответ с числом
 
     if (Number(verification) === 1) {
-      console.log('Correct!');
+      console.log(`${reportsCorrectAnswer()}`);
     } else {
-      return `${answer} is wrong answer ;(. Correct answer was ${noD()}. \nLet's try again, ${name}!`;
+      return `${reportsErrorsAnswer(answer, noD(), name)}`;
     }
     i += 1;
   }
