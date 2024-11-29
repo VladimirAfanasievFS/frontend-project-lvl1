@@ -14,17 +14,14 @@
  </ol>
  <h1>Getting Started</h1>
  <ul>First, fork the repository. Then, go into your favorite terminal.
-<li>git clone git@github.com:YOUR_USERNAME/frontend-project-lvl1.git</li>
-<li>cd FRONT1</li>
-<li>make install</li>
+<li><tt>git clone git@github.com:YOUR_USERNAME/frontend-project-lvl1.git</tt></li>
+<li><tt>cd FRONT1</tt></li>
+<li><tt>make install</tt></li>
 </ul>
   <h1>Game: "Checking for parity."</h1>  
    <p> <tt>The essence of the game is as follows:</tt></p>
    <p>The user is shown a random number. And he needs to answer yes if the number is even, or no if it’s odd.</p>
- <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" target="_blank"><img src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" /></a>
- <video controls>
- <source src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" type="video/svg">
- </video>
+ <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" target="_blank"><video src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" /></a>
  <h1>Game: "Calculator"</h1>  
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.</p>
