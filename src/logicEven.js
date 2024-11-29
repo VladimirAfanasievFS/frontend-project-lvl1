@@ -11,10 +11,10 @@ const result = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".'); // знакомим пользователя с правилами игры
   let i = 1;
   while (i <= 3) {
-    const a = getRandomNumber(1, 99);
-    console.log(`Question: ${a}`); // даем число пользователю
+    const getRandomNumberOne = getRandomNumber(1, 99);
+    console.log(`Question: ${getRandomNumberOne}`); // даем число пользователю
     const getAnswer = readlineSync.question('Your answer: '); // получаем ответ от пользователя
-    const isNumberParity = Number(a) % 2 === 0 ? 'yes' : 'no'; // проверяем на четность число
+    const isNumberParity = Number(getRandomNumber) % 2 === 0 ? 'yes' : 'no'; // проверяем на четность число
     const isVerification = getAnswer === isNumberParity ? 1 : 0; // проверям ответ с числом
     if (isVerification === 1) {
       console.log(reportsCorrectAnswer()); // при правильном ответе продолжаем игру
