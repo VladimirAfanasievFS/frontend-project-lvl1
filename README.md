@@ -12,14 +12,20 @@
 <li>Game: "Arithmetic progression"</li>
 <li>Game: "Is the number prime?"</li>
  </ol>
+ <h1>Getting Started</h1>
+ <ul>First, fork the repository. Then, go into your favorite terminal.
+<li>git clone git@github.com:YOUR_USERNAME/frontend-project-lvl1.git</li>
+<li>cd FRONT1</li>
+<li>make install</li>
+</ul>
   <h1>Game: "Checking for parity."</h1>  
    <p> <tt>The essence of the game is as follows:</tt></p>
    <p>The user is shown a random number. And he needs to answer yes if the number is even, or no if it’s odd.</p>
- <a href="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe" target="_blank"><img src="https://asciinema.org/a/ed75kBcvdXJjPrJ6f26bz5bQe.svg" /></a>
+ <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" target="_blank"><img src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" /></a>
  <h1>Game: "Calculator"</h1>  
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.</p>
- <a href="https://asciinema.org/a/yx2POYWjbD7A7EZzvCTclSd46" target="_blank"><img src="https://asciinema.org/a/yx2POYWjbD7A7EZzvCTclSd46.svg" /></a>
+ <a href="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT" target="_blank"><img src="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT.svg" /></a>
  <h1> Game: "NOD"</h1>  
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common divisor of these numbers.</p>
