@@ -37,9 +37,9 @@
  <h1>Game: "Calculator"</h1>  
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.</p>
- <a href="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT" 
- target="_blank"><img src="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT.svg" 
- /></a>
+ //<a href="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT" 
+ //target="_blank"><img src="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT.svg" 
+ ///></a>
  <h1> Game: "NOD"</h1>  
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common divisor of these numbers.</p>
