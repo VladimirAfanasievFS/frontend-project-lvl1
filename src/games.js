@@ -27,5 +27,3 @@ const getData = () => {
 const games = () => launchLogic(getRules, getData);
 
 export { getRules, games };
-
-console.log(games());
