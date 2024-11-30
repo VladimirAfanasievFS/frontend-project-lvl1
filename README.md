@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru/en">
+<p><img src="/docs/image.png" alt="Homa Games"></p>
 <head>
 <a href="https://codeclimate.com/github/Gudvviin/frontend-project-lvl1/maintainability">
 <img src="https://api.codeclimate.com/v1/badges/9516922a0c070c4d257c/maintainability" />
