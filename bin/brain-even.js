@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable import/extensions */
 
-import { result } from '../src/logicEven.js';
+import { games } from '../src/even.js';
 
-console.log(result());
+console.log(games());

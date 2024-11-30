@@ -2,6 +2,6 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable import/extensions */
 
-import { prime } from '../src/logicPrime.js';
+import { games } from '../src/Prime.js';
 
-console.log(prime());
+console.log(games());

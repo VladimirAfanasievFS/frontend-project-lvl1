@@ -2,6 +2,6 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable import/extensions */
 
-import { progression } from '../src/logicProgression.js';
+import { games } from '../src/Progression.js';
 
-console.log(progression());
+console.log(games());

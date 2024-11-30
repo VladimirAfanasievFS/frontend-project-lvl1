@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable import/extensions */
 
-import { reslt } from '../src/logicGames.js';
+import { games } from '../src/games';
 
-console.log(reslt());
+console.log(games());
