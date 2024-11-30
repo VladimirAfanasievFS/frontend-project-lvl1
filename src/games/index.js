@@ -10,7 +10,7 @@ const launchLogic = (getRules, getData) => {
   console.log(`${getRules}`); // правило игры
   for (let i = 0; i <= 2; i++) {
     const [getTask, questionRight] = getData();
-    console.log(`Question: ${getTask}`);//  даем задачу пользователю
+    console.log(`Question:${getTask}`);//  даем задачу пользователю
     const getAnswer = readlineSync.question('Your answer: '); // получаем ответ от пользователя
     if (getAnswer === questionRight || Number(getAnswer) === Number(questionRight)) {
       console.log(reportsCorrectAnswer());
