@@ -30,7 +30,8 @@
       '/assets/692677.cast',
       document.getElementById('player'),
       { cols: 173, rows: 10 }
-      );
+    );
+  </script>
  <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" 
  target="_blank"><img src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" 
  /></a>
