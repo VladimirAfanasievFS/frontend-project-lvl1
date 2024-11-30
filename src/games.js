@@ -20,7 +20,7 @@ const getData = () => {
     }
     return a + b;
   };
-  const questionRight = noD();
+  const questionRight = Number(noD());
   return [getTask, questionRight];
 };
 
