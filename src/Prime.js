@@ -15,7 +15,6 @@ const getData = () => {
       dataNumber = `${Number(getPrimeNumber[n])}`;
     }
   }
-  console.log(getTask, dataNumber);
   const questionRight = isNumberParity(getTask, dataNumber);
   return [getTask, questionRight];
 };
