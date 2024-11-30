@@ -4,7 +4,7 @@
 import { getRandomNumber } from './const.js';
 import { launchLogic } from './games/index.js';
 
-const getRules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const getRules = 'Find the greatest common divisor of given numbers.';
 
 const getData = () => {
   const getRandomNumberOne = getRandomNumber(1, 100);
