@@ -3,7 +3,7 @@
 /* eslint-disable no-plusplus */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
-import { getName } from './..greeting.js';
+import { getName } from '../greeting.js';
 import { reportsCorrectAnswer, reportsErrorsAnswer, getTheAnswer } from '../const.js';
 
 const launchLogic = (getRules, getData) => {
