@@ -1,7 +1,6 @@
 /* eslint-disable import/no-unresolved */
 /* eslint-disable import/prefer-default-export */
 /* eslint-disable no-plusplus */
-/* eslint-disable import/named */
 /* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
 import { getName } from './..greeting.js';
