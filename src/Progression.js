@@ -21,7 +21,7 @@ const getData = () => {
       a = sum;
       missNumber = a;
       a = '..';
-      result = `${result} ${a}`;
+      result = `${result}${a} `;
     } else {
       result = `${result} ${sum}`;
     }
