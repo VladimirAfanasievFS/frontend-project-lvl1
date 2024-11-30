@@ -32,9 +32,9 @@
       { cols: 173, rows: 10 }
     );
   </script>
- <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" 
+ <!-- <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" 
  target="_blank"><img src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" 
- /></a>
+ /></a> -->
  <h1>Game: "Calculator"</h1>  
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.</p>
