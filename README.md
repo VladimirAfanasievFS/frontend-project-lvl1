@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru/en">
 <head>
-<link rel="stylesheet" type="text/css" href="asciinema-player.css" />
 <a href="https://codeclimate.com/github/Gudvviin/frontend-project-lvl1/maintainability">
 <img src="https://api.codeclimate.com/v1/badges/9516922a0c070c4d257c/maintainability" />
 </a>
@@ -23,24 +22,15 @@
   <h1>Game: "Checking for parity."</h1>  
    <p> <tt>The essence of the game is as follows:</tt></p>
    <p>The user is shown a random number. And he needs to answer yes if the number is even, or no if it’s odd.</p>
-    <div id="player"></div>
-  <script src="asciinema-player.min.js"></script>
-  <script>
-    AsciinemaPlayer.create(
-      '/assets/692677.cast',
-      document.getElementById('player'),
-      { cols: 173, rows: 10 }
-    );
-  </script>
- <!-- <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" 
+ <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" 
  target="_blank"><img src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" 
- /></a> -->
+ /></a>
  <h1>Game: "Calculator"</h1>  
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>The user is shown a random mathematical expression, such as 35 + 16, which must be calculated and the correct answer written down.</p>
- //<a href="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT" 
- //target="_blank"><img src="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT.svg" 
- ///></a>
+ <a href="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT" 
+ target="_blank"><img src="https://asciinema.org/a/KA9EoWctwPgf9Ihm6XULpIcrT.svg" 
+ /></a>
  <h1> Game: "NOD"</h1>  
     <p> <tt>The essence of the game is as follows:</tt></p>
     <p>the user is shown two random numbers, for example, 25 50. The user must calculate and enter the greatest common divisor of these numbers.</p>
