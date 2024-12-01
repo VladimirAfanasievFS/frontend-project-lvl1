@@ -19,9 +19,6 @@
   <h1>Game: "Checking for parity."</h1>  
    <p> <tt>The essence of the game is as follows:</tt></p>
    <p>The user is shown a random number. And he needs to answer yes if the number is even, or no if it’s odd.</p>
-<video controls>
-<source src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" type="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj">
-</video> 
  <a href="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj" 
  target="_blank"><img src="https://asciinema.org/a/9SMuxqp9WqyaBgELPuBBcXbWj.svg" 
  /></a>
