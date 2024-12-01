@@ -1,8 +1,5 @@
-/* eslint-disable no-param-reassign */
-/* eslint-disable eqeqeq */
-/* eslint-disable import/extensions */
-import { getRandomNumber } from './const.js';
-import { launchLogic } from './games/index.js';
+import { getRandomNumber } from './const';
+import { launchLogic } from './games/index';
 
 const getRules = 'Find the greatest common divisor of given numbers.';
 
@@ -11,7 +8,7 @@ const getData = () => {
   const getRandomNumberTwo = getRandomNumber(1, 100);
   const getTask = `${getRandomNumberOne} ${getRandomNumberTwo}`;
   const noD = (a = getRandomNumberOne, b = getRandomNumberTwo) => {
-    while (a != 0 && b != 0) {
+    while (a !== 0 && b !== 0) {
       if (a > b) {
         a %= b;
       } else {

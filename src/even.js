@@ -1,6 +1,5 @@
-/* eslint-disable import/extensions */
-import { getRandomNumber } from './const.js';
-import { launchLogic } from './games/index.js';
+import { getRandomNumber } from './const';
+import { launchLogic } from './games/index';
 
 const getRules = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isNumberParity = (num) => (num % 2 === 0 ? 'yes' : 'no'); // проверяем на четность число

@@ -1,6 +1,5 @@
-/* eslint-disable import/extensions */
-import { getRandomNumber } from './const.js';
-import { launchLogic } from './games/index.js';
+import { getRandomNumber } from './const';
+import { launchLogic } from './games/index';
 
 const getRules = 'What number is missing in the progression?';
 

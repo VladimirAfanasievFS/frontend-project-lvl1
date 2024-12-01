@@ -1,14 +1,10 @@
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/prefer-default-export */
-/* eslint-disable no-plusplus */
-/* eslint-disable import/extensions */
 import readlineSync from 'readline-sync';
-import { getName } from '../greeting.js';
-import { reportsCorrectAnswer, reportsErrorsAnswer, getTheAnswer } from '../const.js';
+import { getName } from '../greeting';
+import { reportsCorrectAnswer, reportsErrorsAnswer, getTheAnswer } from '../const';
 
 const launchLogic = (getRules, getData) => {
   console.log(`${getRules}`); // правило игры
-  for (let i = 0; i <= 2; i++) {
+  for (let i = 0; i <= 2; i += 1) {
     const [getTask, questionRight] = getData();
     console.log(`Question: ${getTask}`);//  даем задачу пользователю
     const getAnswer = readlineSync.question('Your answer: '); // получаем ответ от пользователя
@@ -20,4 +16,4 @@ const launchLogic = (getRules, getData) => {
   }
   return getTheAnswer(getName);
 };
-export { launchLogic };
+export default launchLogic;

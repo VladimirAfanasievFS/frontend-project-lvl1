@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 
-// eslint-disable-next-line import/extensions
-import { gatName } from '../src/cli.js';
+import { gatName } from '../src/cli';
 
 console.log(`Hello, ${gatName}!`);

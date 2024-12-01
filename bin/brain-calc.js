@@ -1,6 +1,5 @@
 #!/usr/bin/env node
-/* eslint-disable import/extensions */
 
-import { games } from '../src/Calc.js';
+import { games } from '../src/Calc';
 
 console.log(games());

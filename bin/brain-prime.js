@@ -1,7 +1,5 @@
 #!/usr/bin/env node
-/* eslint-disable import/no-unresolved */
-/* eslint-disable import/extensions */
 
-import { games } from '../src/Prime.js';
+import { games } from '../src/Prime';
 
 console.log(games());
