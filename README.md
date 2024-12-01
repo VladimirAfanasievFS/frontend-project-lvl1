@@ -1,11 +1,8 @@
-<!DOCTYPE html>!
-
 <html lang="ru/en">
-<p><img src="/docs/image.png" alt="Homa Games"></p>
 <head>
-[image](https://github.com/user-attachments/assets/96dc1314-ce17-4369-b866-926d66265910)
  </head>
  <body>
+  <img src="https://github.com/user-attachments/assets/96dc1314-ce17-4369-b866-926d66265910"/>
  <ol><h1>Games</h1>
  <li>Game: "Checking for parity."</li>
 <li>Game: "Calculator"</li>
