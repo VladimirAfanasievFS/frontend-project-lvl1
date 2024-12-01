@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!DOCTYPE html>!
+
 <html lang="ru/en">
 <p><img src="/docs/image.png" alt="Homa Games"></p>
 <head>
-<a href="https://codeclimate.com/github/Gudvviin/frontend-project-lvl1/maintainability">
-<img src="https://api.codeclimate.com/v1/badges/9516922a0c070c4d257c/maintainability" />
-</a>
+[image](https://github.com/user-attachments/assets/96dc1314-ce17-4369-b866-926d66265910)
  </head>
  <body>
  <ol><h1>Games</h1>
