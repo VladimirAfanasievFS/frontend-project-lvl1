@@ -1,20 +1,20 @@
 import { getRandomNumber } from './const';
-import { launchLogic } from './games/index';
+import launchLogic from './games/index';
 
-const getRules = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const getData = () => {
-  const getOneNumber = getRandomNumber(1, 20);// первое число с чего начинает
-  const getLengthProgression = getRandomNumber(5, 10);// длина прогрессии
-  const getArithmeticRandom = getRandomNumber(1, 4);
+  const number1 = getRandomNumber(1, 20);// первое число с чего начинает
+  const lengthProgression = getRandomNumber(5, 10);// длина прогрессии
+  const arithmeticRandom = getRandomNumber(1, 4);
   let i = 0;
   let missNumber = 0;
   let a = 0; // значение которое спрятано
-  const getIncrease = getArithmeticRandom;
-  let sum = getOneNumber;
+  const getIncrease = arithmeticRandom;
+  let sum = number1;
   let result = '';
-  const getLength = getRandomNumber(1, getLengthProgression);
-  while (i <= getLengthProgression) {
+  const getLength = getRandomNumber(1, lengthProgression);
+  while (i <= lengthProgression) {
     sum += getIncrease;
     if (i === getLength) {
       a = sum;
@@ -26,11 +26,11 @@ const getData = () => {
     }
     i += 1;
   }
-  const getTask = result;
+  const question = result;
   const questionRight = missNumber;
-  return [getTask, questionRight];
+  return [question, questionRight];
 };
 
-const games = () => launchLogic(getRules, getData);
+const games = () => launchLogic(description, getData);
 
-export { getRules, games };
+export { description, games };

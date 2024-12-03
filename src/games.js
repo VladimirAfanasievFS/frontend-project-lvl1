@@ -1,13 +1,15 @@
 import { getRandomNumber } from './const';
-import { launchLogic } from './games/index';
+import launchLogic from './games/index';
 
-const getRules = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getData = () => {
-  const getRandomNumberOne = getRandomNumber(1, 100);
-  const getRandomNumberTwo = getRandomNumber(1, 100);
-  const getTask = `${getRandomNumberOne} ${getRandomNumberTwo}`;
-  const noD = (a = getRandomNumberOne, b = getRandomNumberTwo) => {
+  const number1 = getRandomNumber(1, 100);
+  const number2 = getRandomNumber(1, 100);
+  const question = `${number1} ${number2}`;
+  const noD = (one, two) => {
+    let a = one;
+    let b = two;
     while (a !== 0 && b !== 0) {
       if (a > b) {
         a %= b;
@@ -17,10 +19,10 @@ const getData = () => {
     }
     return a + b;
   };
-  const questionRight = Number(noD());
-  return [getTask, questionRight];
+  const questionRight = Number(noD(number1, number2));
+  return [question, questionRight];
 };
 
-const games = () => launchLogic(getRules, getData);
+const games = () => launchLogic(description, getData);
 
-export { getRules, games };
+export { description, games };

@@ -1,15 +1,15 @@
 import { getRandomNumber } from './const';
-import { launchLogic } from './games/index';
+import launchLogic from './games/index';
 
-const getRules = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isNumberParity = (num) => (num % 2 === 0 ? 'yes' : 'no'); // проверяем на четность число
 
 const getData = () => {
-  const getTask = getRandomNumber(1, 99);
-  const questionRight = isNumberParity(getTask);
-  return [getTask, questionRight];
+  const question = getRandomNumber(1, 99);
+  const questionRight = isNumberParity(question);
+  return [question, questionRight];
 };
 
-const games = () => launchLogic(getRules, getData);
+const games = () => launchLogic(description, getData);
 
-export { getRules, games };
+export { description, games };

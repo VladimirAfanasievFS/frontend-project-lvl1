@@ -1,11 +1,3 @@
-const reportsCorrectAnswer = () => {
-  const i = 'Correct!'; // сообщение правильный ответ
-  return i;
-};
-const reportsErrorsAnswer = (a, b, c) => {
-  const result = `'${a}' is wrong answer ;(. Correct answer was '${b}'\nLet's try again, ${c}!`;
-  return result;
-}; // сообщение при ошибке
 const simile = (a, b) => {
   let result = 0;
   if (a === b) {
@@ -21,8 +13,6 @@ const storesPrimeNumber = () => {
   return result;
 };
 const getRandomNumber = (min, max) => Math.round(Math.random() * (max - min) + min);
-const getTheAnswer = (a) => `Congratulations, ${a}!`;
 export {
-  reportsCorrectAnswer, reportsErrorsAnswer, simile, getRandomNumber,
-  storesPrimeNumber, getTheAnswer,
+  simile, getRandomNumber, storesPrimeNumber,
 };
