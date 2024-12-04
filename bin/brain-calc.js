@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { games } from '../src/Calc';
+import { games } from '../src/calc.js';
 
-console.log(games());
+games();

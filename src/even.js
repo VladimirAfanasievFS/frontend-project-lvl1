@@ -1,5 +1,5 @@
-import { getRandomNumber } from './const';
-import launchLogic from './games/index';
+import { getRandomNumber } from './const.js';
+import launchLogic from './games/index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 const isNumberParity = (num) => (num % 2 === 0 ? 'yes' : 'no'); // проверяем на четность число
@@ -10,6 +10,6 @@ const getData = () => {
   return [question, questionRight];
 };
 
-const games = () => launchLogic(description, getData);
+const games = () => console.log(launchLogic(description, getData));
 
 export { description, games };

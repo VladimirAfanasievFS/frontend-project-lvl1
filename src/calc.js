@@ -1,5 +1,5 @@
-import { getRandomNumber } from './const';
-import launchLogic from './games/index';
+import { getRandomNumber } from './const.js';
+import launchLogic from './games/index.js';
 
 const description = 'What is the result of the expression?';
 let mark = 0; // из полученного числа делаем символ
@@ -29,10 +29,10 @@ const getData = () => {
     default:
       result = number1 + number2;
   }
-  const questionRight = result;
+  const questionRight = String(result);
   return [question, questionRight];
 };
 
-const games = () => launchLogic(description, getData);
+const games = () => console.log(launchLogic(description, getData));
 
 export { description, games };

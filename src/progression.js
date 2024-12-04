@@ -1,5 +1,5 @@
-import { getRandomNumber } from './const';
-import launchLogic from './games/index';
+import { getRandomNumber } from './const.js';
+import launchLogic from './games/index.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -27,10 +27,10 @@ const getData = () => {
     i += 1;
   }
   const question = result;
-  const questionRight = missNumber;
+  const questionRight = String(missNumber);
   return [question, questionRight];
 };
 
-const games = () => launchLogic(description, getData);
+const games = () => console.log(launchLogic(description, getData));
 
 export { description, games };
