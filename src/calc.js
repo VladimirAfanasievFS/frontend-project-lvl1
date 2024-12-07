@@ -2,13 +2,9 @@ import { getRandomNumber } from './const.js';
 import launchLogic from './games/index.js';
 
 const description = 'What is the result of the expression?';
-let mark = 0; // из полученного числа делаем символ
-let result = 0; // из читаемого символа делаем решение
-const getData = () => {
-  const number1 = getRandomNumber(1, 99); // рандомное число
-  const number2 = getRandomNumber(1, 99); // рандомное число
-  const numberSign = getRandomNumber(1, 3); // рандомное число на знак
-  switch (numberSign) {
+const getSign = (number) => {
+  let mark = 0;
+  switch (number) {
     case 1:
       mark = '*';
       break;
@@ -18,8 +14,11 @@ const getData = () => {
     default:
       mark = '+';
   }
-  const question = `${number1} ${mark} ${number2}`; // рандомное выражение
-  switch (mark) {
+  return mark;
+};
+const getExpression = (symbol, number1, number2) => {
+  let result = 0;
+  switch (symbol) {
     case '*':
       result = number1 * number2;
       break;
@@ -29,10 +28,19 @@ const getData = () => {
     default:
       result = number1 + number2;
   }
-  const questionRight = String(result);
+  return result;
+};
+
+const getData = () => {
+  const number1 = getRandomNumber(1, 99); // рандомное число
+  const number2 = getRandomNumber(1, 99); // рандомное число
+  const numberSign = getRandomNumber(1, 3); // рандомное число на знак
+  const sing = getSign(numberSign);
+  const question = `${number1} ${sing} ${number2}`; // рандомное выражение
+  const questionRight = String(getExpression(sing, number1, number2));
   return [question, questionRight];
 };
 
-const games = () => console.log(launchLogic(description, getData));
+const games = () => launchLogic(description, getData);
 
 export { description, games };

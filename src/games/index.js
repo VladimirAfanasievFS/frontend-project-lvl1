@@ -1,7 +1,6 @@
 import readlineSync from 'readline-sync';
 import getName from '../greeting.js';
 
-const isAnswer = (userResponse, task) => (userResponse === task ? 1 : 0);
 const launchLogic = (description, getData) => {
   console.log(`${description}`);
   const roundsNumber = 3;
@@ -9,12 +8,12 @@ const launchLogic = (description, getData) => {
     const [question, questionRight] = getData();
     console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
-    if (isAnswer(answer, questionRight) === 1) {
-      console.log('Correct!');
-    } else {
-      return `'${answer}' is wrong answer ;(. Correct answer was '${questionRight}'\nLet's try again, ${getName}!`;
+    if (answer !== questionRight) {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${questionRight}'\nLet's try again, ${getName}!`);
+      return;
     }
+    console.log('Correct!');
   }
-  return `Congratulations, ${getName}!`;
+  console.log(`Congratulations, ${getName}!`);
 };
 export default launchLogic;

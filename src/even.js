@@ -10,6 +10,6 @@ const getData = () => {
   return [question, questionRight];
 };
 
-const games = () => console.log(launchLogic(description, getData));
+const games = () => launchLogic(description, getData);
 
 export { description, games };
