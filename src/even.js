@@ -1,4 +1,4 @@
-import { getRandomNumber } from './const.js';
+import getRandomNumber from './const.js';
 import launchLogic from './games/index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';

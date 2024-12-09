@@ -1,24 +1,24 @@
-import { getRandomNumber } from './const.js';
+import getRandomNumber from './const.js';
 import launchLogic from './games/index.js';
 
 const description = 'What is the result of the expression?';
 const getSign = (number) => {
-  let mark = 0;
+  let sign = 0;
   switch (number) {
     case 1:
-      mark = '*';
+      sign = '*';
       break;
     case 2:
-      mark = '-';
+      sign = '-';
       break;
     default:
-      mark = '+';
+      sign = '+';
   }
-  return mark;
+  return sign;
 };
-const getExpression = (symbol, number1, number2) => {
+const getExpression = (sign, number1, number2) => {
   let result = 0;
-  switch (symbol) {
+  switch (sign) {
     case '*':
       result = number1 * number2;
       break;

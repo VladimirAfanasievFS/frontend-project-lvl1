@@ -1,4 +1,4 @@
-import { getRandomNumber, storesPrimeNumber } from './const.js';
+import getRandomNumber from './const.js';
 import launchLogic from './games/index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';

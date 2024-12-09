@@ -1,4 +1,4 @@
-import { getRandomNumber } from './const.js';
+import getRandomNumber from './const.js';
 import launchLogic from './games/index.js';
 
 const description = 'What number is missing in the progression?';
