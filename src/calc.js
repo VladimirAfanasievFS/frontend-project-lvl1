@@ -37,8 +37,8 @@ const getData = () => {
   const numberSign = getRandomNumber(1, 3); // рандомное число на знак
   const sing = getSign(numberSign);
   const question = `${number1} ${sing} ${number2}`; // рандомное выражение
-  const questionRight = String(getExpression(sing, number1, number2));
-  return [question, questionRight];
+  const answerRight = String(getExpression(sing, number1, number2));
+  return [question, answerRight];
 };
 
 const games = () => launchLogic(description, getData);

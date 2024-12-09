@@ -20,8 +20,8 @@ const getData = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
-  const questionRight = String(getGreatestCommonDivisor(number1, number2));
-  return [question, questionRight];
+  const answerRight = String(getGreatestCommonDivisor(number1, number2));
+  return [question, answerRight];
 };
 
 const games = () => launchLogic(description, getData);

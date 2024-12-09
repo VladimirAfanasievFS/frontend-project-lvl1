@@ -5,11 +5,11 @@ const launchLogic = (description, getData) => {
   console.log(`${description}`);
   const roundsNumber = 3;
   for (let i = 1; i <= roundsNumber; i += 1) {
-    const [question, questionRight] = getData();
+    const [question, answerRight] = getData();
     console.log(`Question: ${question}`);
-    const answer = readlineSync.question('Your answer: ');
-    if (answer !== questionRight) {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${questionRight}'\nLet's try again, ${getName}!`);
+    const answerUser = readlineSync.question('Your answer: ');
+    if (answerUser !== answerRight) {
+      console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${answerRight}'\nLet's try again, ${getName}!`);
       return;
     }
     console.log('Correct!');

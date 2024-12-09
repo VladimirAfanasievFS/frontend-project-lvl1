@@ -6,8 +6,8 @@ const isNumberParity = (num) => (num % 2 === 0 ? 'yes' : 'no'); // провер�
 
 const getData = () => {
   const question = getRandomNumber(1, 99);
-  const questionRight = isNumberParity(question);
-  return [question, questionRight];
+  const answerRight = isNumberParity(question);
+  return [question, answerRight];
 };
 
 const games = () => launchLogic(description, getData);
