@@ -3,32 +3,24 @@ import launchLogic from './index.js';
 
 const description = 'What is the result of the expression?';
 const getSign = (number) => {
-  let sign = 0;
   switch (number) {
     case 1:
-      sign = '*';
-      break;
+      return '*';
     case 2:
-      sign = '-';
-      break;
+      return '-';
     default:
-      sign = '+';
+      return '+';
   }
-  return sign;
 };
 const getExpression = (sign, number1, number2) => {
-  let result = 0;
   switch (sign) {
     case '*':
-      result = number1 * number2;
-      break;
+      return number1 * number2;
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     default:
-      result = number1 + number2;
+      return number1 + number2;
   }
-  return result;
 };
 
 const getData = () => {
