@@ -1,5 +1,5 @@
-import getRandomNumber from './const.js';
-import launchLogic from './games/index.js';
+import getRandomNumber from '../const.js';
+import launchLogic from './index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 const isNumberSimple = (num) => (num === true ? 'yes' : 'no'); // проверяем на четность число
@@ -20,6 +20,6 @@ const getData = () => {
   return [question, answerRight];
 };
 
-const games = () => launchLogic(description, getData);
+const start = () => launchLogic(description, getData);
 
-export { description, games };
+export { description, start };

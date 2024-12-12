@@ -1,5 +1,5 @@
-import getRandomNumber from './const.js';
-import launchLogic from './games/index.js';
+import getRandomNumber from '../const.js';
+import launchLogic from './index.js';
 
 const description = 'What is the result of the expression?';
 const getSign = (number) => {
@@ -41,6 +41,6 @@ const getData = () => {
   return [question, answerRight];
 };
 
-const games = () => launchLogic(description, getData);
+const start = () => launchLogic(description, getData);
 
-export { description, games };
+export { description, start };

@@ -1,5 +1,5 @@
-import getRandomNumber from './const.js';
-import launchLogic from './games/index.js';
+import getRandomNumber from '../const.js';
+import launchLogic from './index.js';
 
 const description = 'What number is missing in the progression?';
 const getExpression = (number, numberLength, arithmetic, SecretNumber) => {
@@ -33,6 +33,6 @@ const getData = () => {
   return getExpression(number1, lengthProgression, arithmeticRandom, getSecretNumber);
 };
 
-const games = () => launchLogic(description, getData);
+const start = () => launchLogic(description, getData);
 
-export { description, games };
+export { description, start };
