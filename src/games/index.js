@@ -3,8 +3,8 @@ import getName from '../greeting.js';
 
 const launchLogic = (description, getData) => {
   console.log(`${description}`);
-  const roundsNumber = 3;
-  for (let i = 1; i <= roundsNumber; i += 1) {
+  const roundsCount = 3;
+  for (let i = 1; i <= roundsCount; i += 1) {
     const [question, answerRight] = getData();
     console.log(`Question: ${question}`);
     const answerUser = readlineSync.question('Your answer: ');
