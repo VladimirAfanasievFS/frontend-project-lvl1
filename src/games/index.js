@@ -9,7 +9,8 @@ const launchLogic = (description, getData) => {
     console.log(`Question: ${question}`);
     const answerUser = readlineSync.question('Your answer: ');
     if (answerUser !== rightAnswer) {
-      console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${rightAnswer}'\nLet's try again, ${getName}!`);
+      console.log(`'${answerUser}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
+      console.log(`Let's try again, ${getName}!`);
       return;
     }
     console.log('Correct!');
