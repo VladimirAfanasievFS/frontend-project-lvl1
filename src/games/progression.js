@@ -21,8 +21,8 @@ const getExpression = (number, numberLength, arithmetic, SecretNumber) => {
     i += 1;
   }
   const question = result;
-  const answerRight = String(missNumber);
-  return [question, answerRight];
+  const rightAnswer = String(missNumber);
+  return [question, rightAnswer];
 };
 
 const getData = () => {
