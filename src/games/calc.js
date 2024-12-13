@@ -1,4 +1,4 @@
-import getRandomNumber from '../const.js';
+import getRandomNumber from '../helpers.js';
 import launchLogic from './index.js';
 
 const description = 'What is the result of the expression?';

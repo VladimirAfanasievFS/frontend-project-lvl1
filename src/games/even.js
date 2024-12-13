@@ -1,12 +1,12 @@
-import getRandomNumber from '../const.js';
+import getRandomNumber from '../helpers.js';
 import launchLogic from './index.js';
 
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-const isNumberParity = (num) => (num % 2 === 0 ? 'yes' : 'no');
+const isEven = (num) => (num % 2 === 0 ? 'yes' : 'no');
 
 const generateRound = () => {
   const question = getRandomNumber(1, 99);
-  const answer = isNumberParity(question);
+  const answer = isEven(question);
   return [question, answer];
 };
 
