@@ -2,7 +2,7 @@ import getRandomNumber from '../helpers.js';
 import launchLogic from './index.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const isNumberSimple = (num) => (num === true ? 'yes' : 'no');
+const isPrime = (num) => (num === true ? 'yes' : 'no');
 const getNumberSimple = (number) => {
   if (number <= 1) return false;
   if (number === 2) return true;
@@ -16,7 +16,7 @@ const getNumberSimple = (number) => {
 
 const generateRound = () => {
   const question = getRandomNumber(1, 99);
-  const answer = isNumberSimple(getNumberSimple(question));
+  const answer = isPrime(getNumberSimple(question));
   return [question, answer];
 };
 
