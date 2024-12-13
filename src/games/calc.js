@@ -2,16 +2,7 @@ import getRandomNumber from '../const.js';
 import launchLogic from './index.js';
 
 const description = 'What is the result of the expression?';
-const getSign = (number) => {
-  switch (number) {
-    case 1:
-      return '*';
-    case 2:
-      return '-';
-    default:
-      return '+';
-  }
-};
+const getSign = ['*', '-', '+'];
 const getExpression = (sign, number1, number2) => {
   switch (sign) {
     case '*':
@@ -26,8 +17,8 @@ const getExpression = (sign, number1, number2) => {
 const getData = () => {
   const number1 = getRandomNumber(1, 99);
   const number2 = getRandomNumber(1, 99);
-  const numberSign = getRandomNumber(1, 3);
-  const sing = getSign(numberSign);
+  const numberSign = getRandomNumber(0, 2);
+  const sing = getSign[numberSign];
   const question = `${number1} ${sing} ${number2}`;
   const rightAnswer = String(getExpression(sing, number1, number2));
   return [question, rightAnswer];
