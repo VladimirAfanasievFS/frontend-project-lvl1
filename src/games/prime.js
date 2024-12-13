@@ -16,8 +16,8 @@ const getNumberSimple = (number) => {
 
 const getData = () => {
   const question = getRandomNumber(1, 99);
-  const rightAnswer = isNumberSimple(getNumberSimple(question));
-  return [question, rightAnswer];
+  const answer = isNumberSimple(getNumberSimple(question));
+  return [question, answer];
 };
 
 const start = () => launchLogic(description, getData);

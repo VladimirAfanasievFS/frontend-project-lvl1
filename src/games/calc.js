@@ -20,8 +20,8 @@ const getData = () => {
   const numberSign = getRandomNumber(0, 2);
   const sing = getSign[numberSign];
   const question = `${number1} ${sing} ${number2}`;
-  const rightAnswer = String(getExpression(sing, number1, number2));
-  return [question, rightAnswer];
+  const answer = String(getExpression(sing, number1, number2));
+  return [question, answer];
 };
 
 const start = () => launchLogic(description, getData);
