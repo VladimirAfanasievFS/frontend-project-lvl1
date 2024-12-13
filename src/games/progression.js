@@ -25,7 +25,7 @@ const getExpression = (number, numberLength, arithmetic, SecretNumber) => {
   return [question, answer];
 };
 
-const getData = () => {
+const generateRound = () => {
   const number1 = getRandomNumber(1, 20);
   const lengthProgression = getRandomNumber(5, 10);
   const arithmeticRandom = getRandomNumber(1, 4);
@@ -33,6 +33,6 @@ const getData = () => {
   return getExpression(number1, lengthProgression, arithmeticRandom, getSecretNumber);
 };
 
-const start = () => launchLogic(description, getData);
+const start = () => launchLogic(description, generateRound);
 
 export { description, start };

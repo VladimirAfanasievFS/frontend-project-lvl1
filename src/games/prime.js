@@ -14,12 +14,12 @@ const getNumberSimple = (number) => {
   return true;
 };
 
-const getData = () => {
+const generateRound = () => {
   const question = getRandomNumber(1, 99);
   const answer = isNumberSimple(getNumberSimple(question));
   return [question, answer];
 };
 
-const start = () => launchLogic(description, getData);
+const start = () => launchLogic(description, generateRound);
 
 export { description, start };

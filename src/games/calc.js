@@ -14,7 +14,7 @@ const getExpression = (sign, number1, number2) => {
   }
 };
 
-const getData = () => {
+const generateRound = () => {
   const number1 = getRandomNumber(1, 99);
   const number2 = getRandomNumber(1, 99);
   const numberSign = getRandomNumber(0, 2);
@@ -24,6 +24,6 @@ const getData = () => {
   return [question, answer];
 };
 
-const start = () => launchLogic(description, getData);
+const start = () => launchLogic(description, generateRound);
 
 export { description, start };
