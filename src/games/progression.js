@@ -5,7 +5,7 @@ const description = 'What number is missing in the progression?';
 const getExpression = (number, numberLength, arithmetic, SecretNumber) => {
   let i = 0;
   let missNumber = 0;
-  let a = 0; // значение которое спрятано
+  let a = 0;
   let sum = number;
   let result = '';
   while (i <= numberLength) {

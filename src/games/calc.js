@@ -24,11 +24,11 @@ const getExpression = (sign, number1, number2) => {
 };
 
 const getData = () => {
-  const number1 = getRandomNumber(1, 99); // рандомное число
-  const number2 = getRandomNumber(1, 99); // рандомное число
-  const numberSign = getRandomNumber(1, 3); // рандомное число на знак
+  const number1 = getRandomNumber(1, 99);
+  const number2 = getRandomNumber(1, 99);
+  const numberSign = getRandomNumber(1, 3);
   const sing = getSign(numberSign);
-  const question = `${number1} ${sing} ${number2}`; // рандомное выражение
+  const question = `${number1} ${sing} ${number2}`;
   const rightAnswer = String(getExpression(sing, number1, number2));
   return [question, rightAnswer];
 };
