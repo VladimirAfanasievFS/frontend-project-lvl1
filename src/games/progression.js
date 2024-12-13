@@ -2,7 +2,7 @@ import getRandomNumber from '../helpers.js';
 import launchLogic from './index.js';
 
 const description = 'What number is missing in the progression?';
-const getExpression = (number, numberLength, arithmetic, SecretNumber) => {
+const getExpression = (number, numberLength, arithmetic, secretNumber) => {
   let i = 0;
   let missNumber = 0;
   let a = 0;
@@ -10,7 +10,7 @@ const getExpression = (number, numberLength, arithmetic, SecretNumber) => {
   let result = '';
   while (i <= numberLength) {
     sum += arithmetic;
-    if (i === SecretNumber) {
+    if (i === secretNumber) {
       a = sum;
       missNumber = a;
       a = '..';
