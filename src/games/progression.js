@@ -1,5 +1,5 @@
 import getRandomNumber from '../helpers.js';
-import launchLogic from './index.js';
+import launchLogic from '../index.js';
 
 const description = 'What number is missing in the progression?';
 

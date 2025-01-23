@@ -1,5 +1,5 @@
 import getRandomNumber from '../helpers.js';
-import launchLogic from './index.js';
+import launchLogic from '../index.js';
 
 const description = 'What is the result of the expression?';
 const getSign = ['*', '-', '+'];

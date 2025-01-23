@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import greeting from '../greeting.js';
+import greeting from './greeting.js';
 
 const launchLogic = (description, generateRound) => {
   const [userName] = greeting();
