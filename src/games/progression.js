@@ -16,6 +16,7 @@ const numberGeneration = (lengthProgression, arithmeticRandom) => {
   }
   return arr;
 };
+
 const generateMissingProgressin = (number) => {
   const numberRandom = getRandomNumber(1, (number.length - 1));
   let a = 0;
@@ -31,9 +32,9 @@ const generateMissingProgressin = (number) => {
     }
     a += 1;
   }
-  // reply = reply.slice(0, -1);
   return [resul, reply];
 };
+
 const generateRound = () => {
   const lengthProgression = getRandomNumber(5, 10);
   const arithmeticRandom = getRandomNumber(1, 3);
