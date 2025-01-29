@@ -22,8 +22,8 @@ const generateRound = () => {
   const numberSign = getRandomNumber(0, (operators.length - 1));
   const sing = operators[numberSign];
   const question = `${number1} ${sing} ${number2}`;
-  const answer = String(calculate(sing, number1, number2));
-  return [question, answer];
+  const rightAnswer = String(calculate(sing, number1, number2));
+  return [question, rightAnswer];
 };
 
 const start = () => launchLogic(description, generateRound);

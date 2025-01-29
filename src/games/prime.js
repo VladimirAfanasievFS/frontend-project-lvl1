@@ -16,8 +16,8 @@ const getNumberSimple = (number) => {
 
 const generateRound = () => {
   const question = getRandomNumber(1, 99);
-  const answer = isPrime(getNumberSimple(question));
-  return [question, answer];
+  const rightAnswer = isPrime(getNumberSimple(question));
+  return [question, rightAnswer];
 };
 
 const start = () => launchLogic(description, generateRound);
