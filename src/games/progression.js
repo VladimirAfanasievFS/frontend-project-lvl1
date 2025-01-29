@@ -6,13 +6,13 @@ const description = 'What number is missing in the progression?';
 const generateProgression = (lengthProgression, step, startNumber) => {
   let firstNumber = startNumber;
   const arr = [];
-  // for (let i = 0; i < lengthProgression; i += 1) {
-  //   firstNumber += step;
-  //   arr.push(firstNumber);
-  // }
   for (let i = 0; i < lengthProgression; i += 1) {
-    arr.push(firstNumber + step + i);
+    firstNumber += step;
+    arr.push(firstNumber);
   }
+  // for (let i = 0; i < lengthProgression; i += 1) {
+  //   arr.push(firstNumber + step + i);
+  // }
   return arr;
 };
 
