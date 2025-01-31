@@ -19,6 +19,7 @@ const generateRound = () => {
   const progression = generateProgression(lengthProgression, step, startNumber);
   const hiddenNumber = getRandomNumber(0, progression.length);
   const answer = String(progression[hiddenNumber]);
+  console.log(answer);
   progression[hiddenNumber] = '..';
   const question = progression.join(' ');
   return [question, answer];
