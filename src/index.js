@@ -4,7 +4,7 @@ const launchLogic = (description, generateRound) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
-  console.log(`${description}`);
+  console.log(description);
   const roundsCount = 3;
   for (let i = 1; i <= roundsCount; i += 1) {
     const [question, rightAnswer] = generateRound();
