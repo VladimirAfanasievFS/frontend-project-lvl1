@@ -21,6 +21,7 @@ const generateRound = () => {
   const answer = String(progression[hiddenNumber]);
   console.log(answer);
   console.log(progression);
+  console.log(hiddenNumber);
   progression[hiddenNumber] = '..';
   const question = progression.join(' ');
   return [question, answer];
