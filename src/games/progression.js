@@ -22,10 +22,10 @@ const generateRound = () => {
   const step = getRandomNumber(1, 3);
   const hiddenNumber = getRandomNumber(0, lengthProgression);
   const progression = generateProgression(lengthProgression, step, startNumber);
-  const rightAnswer = `${progression[hiddenNumber]}`;
+  const answer = `${progression[hiddenNumber]}`;
   progression[hiddenNumber] = '..';
   const question = progression.join(' ');
-  return [question, rightAnswer];
+  return [question, answer];
 };
 const start = () => launchLogic(description, generateRound);
 

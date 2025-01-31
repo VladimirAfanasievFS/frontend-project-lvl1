@@ -20,8 +20,8 @@ const generateRound = () => {
   const number1 = getRandomNumber(1, 100);
   const number2 = getRandomNumber(1, 100);
   const question = `${number1} ${number2}`;
-  const rightAnswer = String(getGreatestCommonDivisor(number1, number2));
-  return [question, rightAnswer];
+  const answer = String(getGreatestCommonDivisor(number1, number2));
+  return [question, answer];
 };
 
 const start = () => launchLogic(description, generateRound);

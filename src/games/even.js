@@ -6,8 +6,8 @@ const isEven = (num) => (num % 2 === 0);
 
 const generateRound = () => {
   const question = getRandomNumber(1, 99);
-  const rightAnswer = isEven(question) ? 'yes' : 'no';
-  return [question, rightAnswer];
+  const answer = isEven(question) ? 'yes' : 'no';
+  return [question, answer];
 };
 
 const start = () => launchLogic(description, generateRound);
