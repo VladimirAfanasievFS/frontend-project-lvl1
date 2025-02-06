@@ -12,14 +12,14 @@
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
     "brain-gcd": "bin/brain-gcd.js",
-    "brain-progression":"bin/brain-progression.js",
-    "brain-prime":"bin/brain-prime.js"
+    "brain-progression": "bin/brain-progression.js",
+    "brain-prime": "bin/brain-prime.js"
   },
   "description": "",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
- "devDependencies": {
+  "devDependencies": {
     "@eslint/create-config": "^1.0.0",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.8.0",
@@ -29,6 +29,7 @@
     "eslint-plugin-jsx-a11y": "^6.9.0",
     "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "globals": "^15.8.0"
+    "globals": "^15.8.0",
+    "lodash": "^4.17.21"
   }
 }
